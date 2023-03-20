@@ -261,10 +261,23 @@ body,html{
    gap: 20px;
 }
 .dot-wrapper .dot-list li{
-   width: 8px;
-   height: 8px;
+   width: 10px;
+   height: 10px;
    border-radius: 50%;
    background: #aaaaaa;
+}
+.dot-wrapper .dot-list li:hover{
+   width: 12px;
+   height: 12px;
+   background-color: #65B2FF;
+}
+.dot-wrapper .dot-list li.on{
+   width: 12px;
+   height: 12px;
+   background-color: #555555;
+}
+.dot-wrapper .dot-list li.on:hover{
+   background-color: #65B2FF;
 }
 .up-slide .imgs{
    width: 580px;
@@ -286,6 +299,10 @@ body,html{
    width: 100%;
    height: 100%;
    object-fit: cover;
+   transition: 1200ms;
+ }
+ .up-slide .imgs .imgList li a img:hover{
+   transform: scale(1.2);
  }
  .up-menu-list{
     display: flex;
@@ -297,6 +314,13 @@ body,html{
     height: 254px;
     overflow: hidden;
     border-radius: 20px;
+ }
+ .up-menu-list li a img{
+   transition: 700ms;
+ }
+ .up-menu-list li a img:hover{
+   
+   transform: scale(1.2);
  }
  .up-menu-list .top{
     margin-bottom: 20px;
@@ -343,6 +367,12 @@ body,html{
    align-items: center;
    line-height: 1;
  }
+ .inner .apply:hover{
+   background-image: url(../images/tearing2.png);
+   background-size: 120% 100%;
+   background-position: 50%;
+   color: #3B5CD0;
+ }
  .inner .apply span{
    width: 100%;
    text-align: center;
@@ -351,13 +381,18 @@ body,html{
 
  /* upcycling */
 
+
+.monthly{
+   overflow: hidden;
+}
 .monthly-content{
    width: 100%;
+   display: flex;
 }
 .monthly .monthly-content .content-box{
    width: 100%;
    height: 500px;
-   background-color: #001c41;
+   background-color: #000000;
 }
 .content-box .content-team{
    height: 100%;
@@ -417,10 +452,13 @@ body,html{
    height: 100px;
 }
 /* process */
+
 .process .inner .process-content{
    width: 100%;
    display: flex;
    justify-content: space-between;
+   align-items: center;
+   margin-bottom: 100px;
 }
 .process .inner .process-content .step{
    display: flex;
@@ -433,31 +471,59 @@ body,html{
    font-size: 26px;
    font-weight: 800;
 }
+.process .inner .process-content .step li.on a{
+   color: #000000;
+}
+.process .inner .process-content .step li.on::after{
+   content: "";
+   display: inline-block;
+   background-image: url(../images/arrows.png);
+   background-size: 100%;
+   width: 47px;
+   height: 15px;
+   margin: 0px 20px 2px;
+}
 .process .inner .process-content .descript{
-   width: 400px;
-   height: 140px;
-   overflow: hidden;
+   position: relative;
+}
+.process-content .descript .descript-list{
+   height: 200px;
+   width: 430px;
+
 }
 .process-content .descript .descript-list li{
    display: flex;
    flex-direction: column;
-   gap: 30px;
+   position: absolute;
+   top: 0;
+   left: 0;
    font-size: 20px;
+   line-height: 30px;
+   gap: 30px;
 }
 .process-content .descript .descript-list li .sub-title{
    font-size: 50px;
    font-weight: 800;
    color: #1b4b88;
 }
-.process-content .process-img{
+.process-content .frame{
+   width: 350px;
+   height: 350px;
+   overflow: hidden;
+}
+.process-content .frame .process-img{
    display: flex;
    overflow: hidden;
-   width: 400px;
-   height: 400px;
+   width: 100%;
+   height: 100%;
 }
-.process-content .process-img img{
-   position: relative;
-   top: -100px;
+.process-content .frame .process-img li{
+   width: 100%;
+   height: 100%;
+}
+.process-content .frame .process-img img{
+   width: 100%;
+   height: 100%;
 }
 /* SLIDE */
 .slide{
@@ -465,23 +531,25 @@ body,html{
    max-width: 100%;
    height: 500px;
    background-color: #999999;
-   overflow: hidden;
 }
 .slide a{
+   display: block;
    width: 100%;
-   font-size: 70px;
-   font-weight: 800;
-   color: #999999;
-   -webkit-text-stroke: 2px #ffffff;
-   display: flex;
+   height: calc(100% / 3);
 
 }
 .slide a span{
-   display: block;
-   height: 100%;
-   line-height: 160px;
-   /* margin: 40px 0px; */
+   font-size: 70px;
+   font-weight: 800;
+   line-height: 150px;
+   color: #999999;
+   -webkit-text-stroke: 2px #ffffff;
 }
+.slide a span:hover{
+   color: #1b4b88;
+   -webkit-text-stroke: 2px #ffffff;
+}
+
 
 /* slider */
 
