@@ -1,8 +1,3 @@
-body,html{
-   font-family: 'Noto Sans', sans-serif;
-   font-family: 'Noto Sans KR', sans-serif;
-}
-
 .inner{
     width: 1300px;
     height: 100%;
@@ -25,19 +20,6 @@ body,html{
     color: #ffffff;
     display: flex;
     z-index: 99;
-}
-.h-menu a{
-    text-align: center;
-}
-.h-menu a span{
-   color: #ffffff;
-
-}
-.h-menu .logo{
-    width: 150px;
-    height: 50px;
-    background-color: black;
-    font-weight: 800;
 }
 .h-menu .menu-list{
     width: 50px;
@@ -104,7 +86,7 @@ body,html{
    color: #222222;
    width: 350px;
    font-size: 20px;
-   font-weight: 600;
+   font-weight: 800;
    margin-left: 30px ;
    position: relative;
    display: flex;
@@ -117,38 +99,34 @@ body,html{
 .h-menu .menu-open .category .cc{
    color: #222222;
    font-size: 16px;
-   font-weight: 600;
+   font-weight: 800;
 
 }
 .h-menu .menu-open .category .cc li{
-   display: block;
-}
-.h-menu .menu-open .category .cc li span{
    display: flex;
    height: 100%;
    align-items: center;
    left: 30px;
+   font-size: 20px;
    color: #222222;
+   line-height: 30px;
+}
+.h-menu .menu-open .category .cc li span{
+   
 
 }
 
 /*추가*/
 .sns-menu{
+   position: absolute;
+   width: 100%;
+   height: 60px;
+   background-color: #ffffff;
    display: flex;
-   justify-content: end;
-   background:#ffffff;
-   height: 50px;
-   align-items: center;
-   padding-right: 30px;
    gap: 30px;
 }
 .sns-menu a{
-   width: 24px;
-   height: 24px;
-}
-.sns-menu a img{
-   width: 100%;
-   display: block;
+   margin-left: 15px;
 }
 /*end*/
 .h-menu .menu-open li a:last-of-type{
@@ -166,7 +144,7 @@ body,html{
    transform: rotate(-90deg);
 }
 
-.h-menu .menu-open .sns{
+.h-menu .menu-open .sns-img{
   position: relative;
   left: 130px;
 }
@@ -233,13 +211,14 @@ body,html{
  .up{
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
  }
  .inner .title{
     padding: 250px 0px 160px;
  }
- .title h1{
+ .title h2{
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
     color: #222222;
  }
  .up-content{
@@ -384,6 +363,7 @@ body,html{
 
 .monthly{
    overflow: hidden;
+   background-color: #f4f4f4f4;
 }
 .monthly-content{
    width: 100%;
@@ -422,7 +402,7 @@ body,html{
    flex-direction: column;
    color: #ffffff;
    font-size: 20px;
-   font-weight: 600;
+   font-weight: 800;
    text-align: center;
    gap: 30px;
 }
@@ -469,7 +449,7 @@ body,html{
 .process .inner .process-content .step li a{
    color: #949494;
    font-size: 26px;
-   font-weight: 800;
+   font-weight: 600;
 }
 .process .inner .process-content .step li.on a{
    color: #000000;
@@ -535,17 +515,14 @@ body,html{
 .slide a{
    display: block;
    width: 100%;
-   height: calc(100% / 3);
-
-}
-.slide a span{
    font-size: 70px;
    font-weight: 800;
    line-height: 150px;
    color: #999999;
    -webkit-text-stroke: 2px #ffffff;
+
 }
-.slide a span:hover{
+.slide a:hover{
    color: #1b4b88;
    -webkit-text-stroke: 2px #ffffff;
 }
@@ -664,14 +641,15 @@ background: linear-gradient(90deg, rgba(27,75,136,0) 0%, rgba(25,90,173,0.1) 40%
    display: flex;
    flex-direction: column;
    text-align: left;
+   width: 500px;
 }
-.sns .inner .link .insta img{
+.sns .inner .link img{
    width: 60px;
    height: 60px;
 }
 .sns .inner .link span{
    font-size: 40px;
-   font-weight: 600;
+   font-weight: 800;
    line-height: 50px;
    color: #222222;
    margin: 50px 0px 50px;
@@ -686,25 +664,14 @@ background: linear-gradient(90deg, rgba(27,75,136,0) 0%, rgba(25,90,173,0.1) 40%
 .sns .inner .link a:last-of-type{
    margin-left: 3px;
 }
-.sns .inner .pic{
-   flex-direction: column;
+.sns .inner .pic-list{
+   display: flex;
+   gap: 30px;
+   flex-wrap: wrap;
 }
-.sns .inner .pic img{
+.sns .inner .pic-list li img{
    width: 300px;
    height: 300px;
-}
-.sns .inner .pic .pic-top{
-   display: flex;
-   
-}
-.sns .inner .pic .pic-top li{
-   margin: 0px 0px 30px 30px;
-}
-.sns .inner .pic .pic-bottom{
-   display: flex;
-}
-.sns .inner .pic .pic-bottom li{
-   margin: 0px 0px 30px 30px;
 }
 
 /* body-end */
@@ -732,11 +699,9 @@ background: linear-gradient(90deg, rgba(27,75,136,0) 0%, rgba(25,90,173,0.1) 40%
    display: flex;
    gap: 30px;
 }
-.f-container .inner .left .menu-list li{
-   font-size: 20px;
-}
-.f-container .inner .left .menu-list li a{
+.f-container .inner .left .menu-list a{
    color: #dddddd;
+   font-size: 20px;
 }
 .f-container .inner .left .information{
    display: flex;
@@ -744,6 +709,12 @@ background: linear-gradient(90deg, rgba(27,75,136,0) 0%, rgba(25,90,173,0.1) 40%
    font-size: 15px;
    line-height: 20px;
    gap: 15px;
+}
+.f-container .inner .left .information span.address{
+   width: 100%;
+   font-size: 25px;
+   margin-bottom: 20px;
+   font-weight: 800;
 }
 .f-container .inner .left .information a{
    width: 80px;

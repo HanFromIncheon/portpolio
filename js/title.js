@@ -111,7 +111,7 @@ function slide(){ //upcycling 이미지 슬라이더
 
         clearInterval(timer)
         setTimeout(function(){
-            timer = setInterval(onPlay, 2000)
+            timer = setInterval(onPlay, 3000)
         },3000)
 
     })

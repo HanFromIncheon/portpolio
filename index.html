@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +9,27 @@
     <!-- css링크 -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-      </style><!-- 영문폰트 -->
+    <link rel="stylesheet" href="css/font.css">
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="js/title.js"></script><!-- script 외부 저장 파일 -->
 
+<!-- 
+    수정사항
+    1. 폰트 위치 및 변경[lang=kor] done
+    2. 타이틀 h1, h2분리 done
+    3. 리스트가 아닌 li태그들 done
+    4. 형제가 없는데 이유없이 감싸진 태그들 done
+    5. 이미지 파일명 띄어쓰기+특수기호 빼기 done
+    6. descript p안에 span 세개로 분리해서 영역 확실히 잡기
+    7. maquee 버리고 애니메이션 쓰기
+    8. sns링크 텍스트에만 done
+    9. footer 구역 분리
+    10. 사업자정보 이미지 텍스트로 변경
+    11. 사이드 메뉴 X자 만들기
 
+
+ -->
 
 </head>
 
@@ -25,7 +37,7 @@
     <header class="h-container">
         <div class="h-wrapper">
             <div class="h-menu">
-                    <a href="#" class="logo"><span>TITLE</span></a>
+                    <a href="#"><h1><img src="images/TITLELOGO.png" alt="로고이미지"></h1></a>
 
                     <div class="menu-list">
                         <a href="#" class="menu-btn">
@@ -73,9 +85,9 @@
                             <li class="category">
                                 <a href="#">CONTACT CENTRE</a>
                                 <ul class="cc">
-                                    <li><span>고객센터  : 1588-0321</span></li>
-                                    <li><span>메일 문의 : TITLE_0321@NAVER.COM</span></li>
-                                    <li><span>찾아오시는 길 : 서울특별시 용산구 한강대로 100</span></li>
+                                    <li lang="kor">고객센터  : 1588-0321</li>
+                                    <li lang="kor">메일 문의 : TITLE_0321@NAVER.COM</li>
+                                    <li lang="kor">찾아오시는 길 : 서울특별시 용산구 한강대로 100</li>
                                 </ul>
                             </li>
                             <li class="category not">
@@ -87,10 +99,10 @@
                             
                         </ul>
                         <div class="sns-menu">
-                            <a href="#" class="sns">
+                            <a href="#" class="sns-img">
                                 <img src="images/instagram-alt-logo-24.png" alt="인스타그램">
                             </a>
-                            <a href="#" class="sns">
+                            <a href="#" class="sns-img">
                                 <img src="images/youtube-logo-24.png" alt="유튜브">
                             </a>
                         </div>
@@ -111,7 +123,7 @@
         <div class="up">
             <div class="inner">
                 <div class="title">
-                    <h1>UPCYCLING</h1>
+                    <h2>UPCYCLING</h2>
                 </div>
                 <div class="up-content">
                     <div class="up-slide">
@@ -191,7 +203,7 @@
                 </div>
 
                 <a href="#none" class="apply">
-                    <span> 커스텀 신청하기 </span>
+                    <span lang="kor"> 커스텀 신청하기 </span><!-- span 제거 -->
                 </a>
 
             </div>
@@ -199,7 +211,7 @@
         <div class="monthly">
             <div class="inner">
                 <div class="title">
-                    <h1>MONTHLY CLUB</h1>
+                    <h2>MONTHLY CLUB</h2>
                 </div>
             </div>
 
@@ -207,26 +219,26 @@
                 <li class="content-box">
                     <div class="inner">
                         <div class="content-team">
-                            <a href="#none"><img src="images/club-logo-imgs (1).png"></a>
+                            <a href="#none"><img src="images/club01.png"></a>
                         </div>
                         <div class="item-wrapper">
                             <ul class="item-list">
                                 <li>
                                     <a href="#none">
                                         <img src="images/psg1.jpg" alt="상품이미지">
-                                        PSG-RUG
+                                        <span>PSG-RUG</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#none">
                                         <img src="images/psg2.jpg" alt="상품이미지">
-                                        PSG-SWEAT SHIRT
+                                        <span>PSG-SWEAT SHIRT</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#none">
                                         <img src="images/psg3.jpg" alt="상품이미지">
-                                        PSG-CAP
+                                        <span>PSG-CAP</span>
                                     </a>
                                 </li>
                             </ul>
@@ -236,26 +248,26 @@
                 <li class="content-box">
                     <div class="inner">
                         <div class="content-team">
-                            <a href="#"><img src="images/club-logo-imgs (2).png"></a>
+                            <a href="#"><img src="images/club02.png"></a>
                         </div>
                         <div class="item-wrapper">
                             <ul class="item-list">
                                 <li>
                                     <a href="#">
                                         <img src="images/psg1.jpg" alt="상품이미지">
-                                        PSG-RUG
+                                        <span>PSG-RUG</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg2.jpg" alt="상품이미지">
-                                        PSG-SWEAT SHIRT
+                                        <span>PSG-SWEAT SHIRT</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg3.jpg" alt="상품이미지">
-                                        PSG-CAP
+                                        <span>PSG-CAP</span>
                                     </a>
                                 </li>
                             </ul>
@@ -265,26 +277,26 @@
                 <li class="content-box">
                     <div class="inner">
                         <div class="content-team">
-                            <a href="#"><img src="images/club-logo-imgs (3).png"></a>
+                            <a href="#"><img src="images/club03.png"></a>
                         </div>
                         <div class="item-wrapper">
                             <ul class="item-list">
                                 <li>
                                     <a href="#">
                                         <img src="images/psg1.jpg" alt="상품이미지">
-                                        PSG-RUG
+                                        <span>PSG-RUG</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg2.jpg" alt="상품이미지">
-                                        PSG-SWEAT SHIRT
+                                        <span>PSG-SWEAT SHIRT</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg3.jpg" alt="상품이미지">
-                                        PSG-CAP
+                                        <span>PSG-CAP</span>
                                     </a>
                                 </li>
                             </ul>
@@ -294,26 +306,26 @@
                 <li class="content-box">
                     <div class="inner">
                         <div class="content-team">
-                            <a href="#"><img src="images/club-logo-imgs (4).png"></a>
+                            <a href="#"><img src="images/club04.png"></a>
                         </div>
                         <div class="item-wrapper">
                             <ul class="item-list">
                                 <li>
                                     <a href="#">
                                         <img src="images/psg1.jpg" alt="상품이미지">
-                                        PSG-RUG
+                                        <span>PSG-RUG</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg2.jpg" alt="상품이미지">
-                                        PSG-SWEAT SHIRT
+                                        <span>PSG-SWEAT SHIRT</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg3.jpg" alt="상품이미지">
-                                        PSG-CAP
+                                        <span>PSG-CAP</span>
                                     </a>
                                 </li>
                             </ul>
@@ -323,26 +335,26 @@
                 <li class="content-box">
                     <div class="inner">
                         <div class="content-team">
-                            <a href="#"><img src="images/club-logo-imgs (5).png"></a>
+                            <a href="#"><img src="images/club05.png"></a>
                         </div>
                         <div class="item-wrapper">
                             <ul class="item-list">
                                 <li>
                                     <a href="#">
                                         <img src="images/psg1.jpg" alt="상품이미지">
-                                        PSG-RUG
+                                        <span>PSG-RUG</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg2.jpg" alt="상품이미지">
-                                        PSG-SWEAT SHIRT
+                                        <span>PSG-SWEAT SHIRT</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg3.jpg" alt="상품이미지">
-                                        PSG-CAP
+                                        <span>PSG-CAP</span>
                                     </a>
                                 </li>
                             </ul>
@@ -352,26 +364,26 @@
                 <li class="content-box">
                     <div class="inner">
                         <div class="content-team">
-                            <a href="#"><img src="images/club-logo-imgs (6).png"></a>
+                            <a href="#"><img src="images/club06.png"></a>
                         </div>
                         <div class="item-wrapper">
                             <ul class="item-list">
                                 <li>
                                     <a href="#">
                                         <img src="images/psg1.jpg" alt="상품이미지">
-                                        PSG-RUG
+                                        <span>PSG-RUG</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg2.jpg" alt="상품이미지">
-                                        PSG-SWEAT SHIRT
+                                        <span>PSG-SWEAT SHIRT</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg3.jpg" alt="상품이미지">
-                                        PSG-CAP
+                                        <span>PSG-CAP</span>
                                     </a>
                                 </li>
                             </ul>
@@ -381,26 +393,26 @@
                 <li class="content-box">
                     <div class="inner">
                         <div class="content-team">
-                            <a href="#"><img src="images/club-logo-imgs (7).png"></a>
+                            <a href="#"><img src="images/club07.png"></a>
                         </div>
                         <div class="item-wrapper">
                             <ul class="item-list">
                                 <li>
                                     <a href="#">
                                         <img src="images/psg1.jpg" alt="상품이미지">
-                                        PSG-RUG
+                                        <span>PSG-RUG</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg2.jpg" alt="상품이미지">
-                                        PSG-SWEAT SHIRT
+                                        <span>PSG-SWEAT SHIRT</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="images/psg3.jpg" alt="상품이미지">
-                                        PSG-CAP
+                                        <span>PSG-CAP</span>
                                     </a>
                                 </li>
                             </ul>
@@ -413,37 +425,37 @@
                 <div class="inner">
                     <ul class="club-item">
                         <li>
-                            <a href="#"><img src="images/club-logo (1).png" alt="로고 이미지"></a>
+                            <a href="#"><img src="images/logo01.png" alt="로고 이미지"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/club-logo (2).png" alt="로고 이미지"></a>
+                            <a href="#"><img src="images/logo02.png" alt="로고 이미지"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/club-logo (3).png" alt="로고 이미지"></a>
+                            <a href="#"><img src="images/logo03.png" alt="로고 이미지"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/club-logo (4).png" alt="로고 이미지"></a>
+                            <a href="#"><img src="images/logo04.png" alt="로고 이미지"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/club-logo (5).png" alt="로고 이미지"></a>
+                            <a href="#"><img src="images/logo05.png" alt="로고 이미지"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/club-logo (6).png" alt="로고 이미지"></a>
+                            <a href="#"><img src="images/logo06.png" alt="로고 이미지"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/club-logo (7).png" alt="로고 이미지"></a>
+                            <a href="#"><img src="images/logo07.png" alt="로고 이미지"></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="process"><!-- 1 -->
-            <div class="inner"><!-- 2 -->
+        <div class="process">
+            <div class="inner">
                 <div class="title">
-                    <h1>PROCESS</h1>
+                    <h2>PROCESS</h2>
                 </div>
 
-                <div class="process-content"><!-- 3 -->
+                <div class="process-content">
                     <ul class="step">
                         <li class="on"><a href="#">STEP1</a></li>
                         <li><a href="#">STEP2</a></li>
@@ -456,31 +468,31 @@
                         <ul class="descript-list">
                             <li>
                                 <span class="sub-title">1.CUTTING</span>
-                                    <span>축구 유니폼으로서의 시간을 끝내고, <br>
+                                    <span lang="kor">축구 유니폼으로서의 시간을 끝내고, <br>
                                     새로운 아이템으로 변하기 위해 <br>
-                                    셔츠를 재가공에 적합한 상태로 분해합니다.</span>
+                                    셔츠를 재가공에 적합한 상태로 분해합니다.</span><!-- span 3분할 하기 -->
                             </li>
                             <li>
                                 <span class="sub-title">2.SORTING</span>
-                                    <span>분해된 유니폼 조각들은 다음 과정을 위해 <br>
+                                    <span lang="kor">분해된 유니폼 조각들은 다음 과정을 위해 <br>
                                     이동하고, 재활용할 수 없는 부분들은<br>
                                     소각, 혹은 폐기 됩니다.</span>
                             </li>
                             <li>
                                 <span class="sub-title">3.WASHING</span>
-                                    <span>모든 유니폼은 별도의 세척 과정을 거치고,<br>
+                                    <span lang="kor">모든 유니폼은 별도의 세척 과정을 거치고,<br>
                                     이물질이나 불필요한 부분들은 제거 됩니다.<br>
                                     이제 유니폼은 재가공 되기 적합한 상태가 됩니다.</span>
                             </li>
                             <li>
                                 <span class="sub-title">4.SEWING</span>
-                                    <span>세척된 유니폼 조각들은 <br>
+                                    <span lang="kor">세척된 유니폼 조각들은 <br>
                                     주문자가 선택한 형태에 맞추어 <br>
                                     기존과 다른 새로운 형태로 탄생됩니다.</span>
                             </li>
                             <li>
                                 <span class="sub-title">5.CHECKING</span>
-                                    <span>새로운 형태로 재탄생 된 유니폼은<br>
+                                    <span lang="kor">새로운 형태로 재탄생 된 유니폼은<br>
                                     자체 검수 전문가들의 꼼꼼한 심사를 통해 <br>
                                     고객님께 돌아가기 전 마지막 체크를 합니다.</span>
                             </li>
@@ -488,32 +500,24 @@
                         </ul>
                     </div>
                     <div class="frame">
-                        <ul class="process-img"><!--4  -->
-                            <li><img src="images/process (1).png" alt="설명이미지"></li>
-                            <li><img src="images/process (2).png" alt="설명이미지"></li>
-                            <li><img src="images/process (3).png" alt="설명이미지"></li>
-                            <li><img src="images/process (4).png" alt="설명이미지"></li>
-                            <li><img src="images/process (5).png" alt="설명이미지"></li>
+                        <ul class="process-img">
+                            <li><img src="images/process01.png" alt="설명이미지"></li>
+                            <li><img src="images/process02.png" alt="설명이미지"></li>
+                            <li><img src="images/process03.png" alt="설명이미지"></li>
+                            <li><img src="images/process04.png" alt="설명이미지"></li>
+                            <li><img src="images/process05.png" alt="설명이미지"></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <a href="#none">
-                <span><marquee behavior="scroll" scrollamount="10">UPCYCLING NOW - UPCYCLING NOW - UPCYCLING NOW</marquee>  </span>
-            </a>
-            <a href="#none">
-                <span><marquee direction="right" behavior="scroll" scrollamount="30">UPCYCLING NOW - UPCYCLING NOW - UPCYCLING NOW</marquee> </span>
-            </a>
-            <a href="#none">
-                <span><marquee behavior="scroll" scrollamount="20">UPCYCLING NOW - UPCYCLING NOW - UPCYCLING NOW</marquee></span>
-            </a>
+            <a href="#none">UPCYCLING NOW - UPCYCLING NOW - UPCYCLING NOW</a><!-- 애니메이션으로 변경하기 -->
         </div>
         <div class="official">
             <div class="inner">
                 <div class="title">
-                    <h1>OFFICIAL JERSEY</h1>
+                    <h2>OFFICIAL JERSEY</h2>
                 </div>
             </div>
             <div class="content-wrapper">
@@ -522,29 +526,19 @@
                 </a>
                 <ul class="menu-list">
                     <li>
-                        <a href="#none">
-                            <span>EUROPE</span>
-                        </a>
+                        <a href="#none">EUROPE</a>
                     </li>
                     <li>
-                        <a href="#none">
-                            <span>ASIA</span>
-                        </a>
+                        <a href="#none"> ASIA</a>
                     </li>
                     <li>
-                        <a href="#none">
-                            <span>AMERICA</span>
-                        </a>
+                        <a href="#none">AMERICA</a>
                     </li>
                     <li>
-                        <a href="#none">
-                            <span>INTERNATIONAL</span>
-                        </a>
+                        <a href="#none">INTERNATIONAL</a>
                     </li>
                     <li>
-                        <a href="#none">
-                            <span>ETC</span>
-                        </a>
+                        <a href="#none"> ETC</a>
                     </li>                    
                 </ul>
             </div>
@@ -552,60 +546,57 @@
         <div class="sns">
             <div class="inner">
                 <div class="link">
-                    <a href="#none" class="insta"><img src="images/Instagram.png" alt="인스타그램"></a>
+                    <img src="images/Instagram.png" alt="인스타그램">
                     <span>TITLE WITH <br>
                         YOUR STYLE
                     </span>
                     <a href="#none">@TITLE</a>
                     <a href="#none"># TITLE</a>
                 </div>
-                <div class="pic">
-                    <ul class="pic-top">
-                        <li>
-                            <a href="#none"><img src="images/insta-1.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="#none"><img src="images/insta-2.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="#none"><img src="images/insta-3.jpg"></a>
-                        </li>
-                    </ul>
-                    <ul class="pic-bottom">
-                        <li>
-                            <a href="#none"><img src="images/insta-4.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="#none"><img src="images/insta-1.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="#none"><img src="images/insta-4.jpg"></a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="pic-list">
+                    <li>
+                        <a href="#none"><img src="images/insta-1.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#none"><img src="images/insta-2.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#none"><img src="images/insta-3.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#none"><img src="images/insta-4.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#none"><img src="images/insta-1.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#none"><img src="images/insta-4.jpg"></a>
+                    </li>
+                </ul>
                 
             </div>
         </div>
-    </body>
+    </main>
 
     <footer class="f-container">
         <div class="inner">
             <div class="left">
-                <ul class="menu-list">
-                    <li><a href="#none">타이틀</a></li>
-                    <li><a href="#none">대표이사</a></li>
-                    <li><a href="#none">제휴문의</a></li>
-                    <li><a href="#none">이용약관</a></li>
-                    <li><a href="#none">개인정보처리방침</a></li>
-                </ul>
-                <span class="address">주소 : 서울특별시 용산구 한강대로 100</span>
+                <div class="menu-list">
+                    <a href="#none">타이틀</a>
+                    <a href="#none">대표이사</a>
+                    <a href="#none">제휴문의</a>
+                    <a href="#none">이용약관</a>
+                    <a href="#none">개인정보처리방침</a>
+                </div>
+                
                 <div class="information">
+                    <span class="address">주소 : 서울특별시 용산구 한강대로 100</span>
                     <span>대표자 신동한</span>
                     <span>개인정보보호책임자 신동한</span>
                     <span>사업자 등록번호 : 211-88-11111</span>
                     <span>통신판매업신고 : 제 2023호-서울용산-12345호</span>
-                    <a href="#none"><img src="images/사업자정보확인.png" alt="사업자 정보 확인"></a>
-                    <span>COPYRIGHT© TITLE. All RIGHTS RESERVED.</span>
+                    <a href="#none"><img src="images/사업자정보확인.png" alt="사업자 정보 확인"></a><!-- 이미지 제거 텍스트로 변경 -->
+                    <span lang="eng">COPYRIGHT© TITLE. All RIGHTS RESERVED.</span>
                 </div>
             </div>
             <div class="right">
@@ -615,7 +606,7 @@
                     <li class="S">평일 09:30 ~ 17:30</li>
                     <li class="S">점심 11:30 ~ 13:00</li>
                     <li class="XS">*주말, 공휴일은 휴무입니다.</li>
-                    <li class="XS">*1월 1일, 명절 전날, 당일 제외 연중 무휴</li>
+                    <li class="XS">*1월 1일, 명절 전날, 당일 제외 연중 무휴</li><!-- 클래스명 확실하게 변경+대문자금지 -->
                 </ul>
                 <ul class="transfer">
                     <li class="L">계좌번호</li>

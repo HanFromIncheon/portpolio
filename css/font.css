@@ -1,0 +1,8 @@
+header, main{
+    font-family: 'Noto Sans', sans-serif;
+ }
+ footer{
+    font-family: 'Noto Sans KR', sans-serif;
+ }
+:lang(kor) { font-family: 'Noto Sans KR', sans-serif; }
+:lang(eng) { font-family: 'Noto Sans', sans-serif; }
