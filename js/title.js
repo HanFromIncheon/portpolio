@@ -21,7 +21,7 @@ function menu() { //사이드 메뉴 오픈
     var menu = $('.menu-wrap')
 
     menu.css({ 'left': -menu.innerWidth() })
-    menu.removeClass('off')
+
     btn.on('click', function () {
 
         var isOn = menu.hasClass('on')
@@ -35,9 +35,12 @@ function menu() { //사이드 메뉴 오픈
 
             menu.stop().animate({ 'left': -menu.innerWidth() }, 300)
             menu.removeClass('on')
+
+            $('.burger-btn').attr("src",'images/list.svg')
         } else {
             menu.addClass('on')
             menu.stop().animate({ 'left': 0 }, 300)
+            $('.burger-btn').attr("src",'images/close.png')
         }
         return false
     }

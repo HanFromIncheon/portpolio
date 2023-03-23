@@ -21,12 +21,12 @@
     3. 리스트가 아닌 li태그들 done
     4. 형제가 없는데 이유없이 감싸진 태그들 done
     5. 이미지 파일명 띄어쓰기+특수기호 빼기 done
-    6. descript p안에 span 세개로 분리해서 영역 확실히 잡기
-    7. maquee 버리고 애니메이션 쓰기
+    6. descript p안에 span 세개로 분리해서 영역 확실히 잡기 done
+    7. maquee 버리고 애니메이션 쓰기 done
     8. sns링크 텍스트에만 done
     9. footer 구역 분리
-    10. 사업자정보 이미지 텍스트로 변경
-    11. 사이드 메뉴 X자 만들기
+    10. 사업자정보 이미지 텍스트로 변경 done
+    11. 사이드 메뉴 X자 만들기 done? did
 
 
  -->
@@ -41,7 +41,7 @@
 
                     <div class="menu-list">
                         <a href="#" class="menu-btn">
-                            <img src="images/list.svg" alt="메뉴 리스트">
+                            <img src="images/list.svg" class="burger-btn" alt="메뉴 리스트">
                         </a>
                     </div>
 
@@ -120,7 +120,7 @@
     </header>
 
     <main>
-        <div class="up">
+        <section class="up">
             <div class="inner">
                 <div class="title">
                     <h2>UPCYCLING</h2>
@@ -207,8 +207,8 @@
                 </a>
 
             </div>
-        </div>
-        <div class="monthly">
+        </section>
+        <section class="monthly">
             <div class="inner">
                 <div class="title">
                     <h2>MONTHLY CLUB</h2>
@@ -448,8 +448,8 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="process">
+        </section>
+        <section class="process">
             <div class="inner">
                 <div class="title">
                     <h2>PROCESS</h2>
@@ -468,33 +468,43 @@
                         <ul class="descript-list">
                             <li>
                                 <span class="sub-title">1.CUTTING</span>
-                                    <span lang="kor">축구 유니폼으로서의 시간을 끝내고, <br>
-                                    새로운 아이템으로 변하기 위해 <br>
-                                    셔츠를 재가공에 적합한 상태로 분해합니다.</span><!-- span 3분할 하기 -->
+                                <p class="text" lang="kor">
+                                    <span>축구 유니폼으로서의 시간을 끝내고,</span>
+                                    <span>새로운 아이템으로 변하기 위해</span>
+                                    <span>셔츠를 재가공에 적합한 상태로 분해합니다.</span>
+                                </p>
                             </li>
                             <li>
                                 <span class="sub-title">2.SORTING</span>
-                                    <span lang="kor">분해된 유니폼 조각들은 다음 과정을 위해 <br>
-                                    이동하고, 재활용할 수 없는 부분들은<br>
-                                    소각, 혹은 폐기 됩니다.</span>
+                                <p class="text" lang="kor">
+                                    <span>분해된 유니폼 조각들 중</span>
+                                    <span>재활용할 수 없는 부분들은</span>
+                                    <span>소각, 혹은 폐기 됩니다.</span>
+                                </p>
                             </li>
                             <li>
                                 <span class="sub-title">3.WASHING</span>
-                                    <span lang="kor">모든 유니폼은 별도의 세척 과정을 거치고,<br>
-                                    이물질이나 불필요한 부분들은 제거 됩니다.<br>
-                                    이제 유니폼은 재가공 되기 적합한 상태가 됩니다.</span>
+                                <p class="text" lang="kor">
+                                    <span>모든 유니폼은 별도의 세척 과정을 거치고,</span>
+                                    <span>이물질이나 불필요한 부분들은 제거 됩니다.</span>
+                                    <span>이제 유니폼은 재가공 되기 적합한 상태가 됩니다.</span>
+                                </p>
                             </li>
                             <li>
                                 <span class="sub-title">4.SEWING</span>
-                                    <span lang="kor">세척된 유니폼 조각들은 <br>
-                                    주문자가 선택한 형태에 맞추어 <br>
-                                    기존과 다른 새로운 형태로 탄생됩니다.</span>
+                                <p class="text" lang="kor">
+                                    <span>세척된 유니폼 조각들은</span>
+                                    <span>자사의 리폼 전문가들에 의해</span>
+                                    <span>기존과 다른 새로운 형태로 탄생됩니다</span>
+                                </p>
                             </li>
                             <li>
                                 <span class="sub-title">5.CHECKING</span>
-                                    <span lang="kor">새로운 형태로 재탄생 된 유니폼은<br>
-                                    자체 검수 전문가들의 꼼꼼한 심사를 통해 <br>
-                                    고객님께 돌아가기 전 마지막 체크를 합니다.</span>
+                                <p class="text" lang="kor">
+                                    <span>새로운 형태로 재탄생 된 유니폼은</span>
+                                    <span>자체 검수 전문가들의 꼼꼼한 심사를 통해</span>
+                                    <span>고객님께 돌아가기 전 마지막 체크를 합니다.</span>
+                                </p>
                             </li>
                             
                         </ul>
@@ -510,11 +520,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="slide">
-            <a href="#none">UPCYCLING NOW - UPCYCLING NOW - UPCYCLING NOW</a><!-- 애니메이션으로 변경하기 -->
-        </div>
-        <div class="official">
+        </section>
+        <section class="slide">
+            <div class="inner">
+                <div class="content">
+                    <a href="#none" class="bg-text">FootBall, Passion, Shirt, Stadium, ,Legend, Player, Localism, Professional, Fans, Goal, Time, Love, Team, Mentality, Winning, Match, Friends, Beer, Pitch</a>
+                    <a href="#none" class="text">UPCYCLING NOW - UPCYCLING NOW - UPCYCLING NOW</a>
+                </div>
+              </div>
+        </section>
+        <section class="official">
             <div class="inner">
                 <div class="title">
                     <h2>OFFICIAL JERSEY</h2>
@@ -542,8 +557,8 @@
                     </li>                    
                 </ul>
             </div>
-        </div>
-        <div class="sns">
+        </section>
+        <section class="sns">
             <div class="inner">
                 <div class="link">
                     <img src="images/Instagram.png" alt="인스타그램">
@@ -575,7 +590,7 @@
                 </ul>
                 
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="f-container">
@@ -595,7 +610,7 @@
                     <span>개인정보보호책임자 신동한</span>
                     <span>사업자 등록번호 : 211-88-11111</span>
                     <span>통신판매업신고 : 제 2023호-서울용산-12345호</span>
-                    <a href="#none"><img src="images/사업자정보확인.png" alt="사업자 정보 확인"></a><!-- 이미지 제거 텍스트로 변경 -->
+                    <a href="#none"><span>사업자정보확인</span></a>
                     <span lang="eng">COPYRIGHT© TITLE. All RIGHTS RESERVED.</span>
                 </div>
             </div>
