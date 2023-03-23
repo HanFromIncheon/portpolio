@@ -6,6 +6,7 @@ $(document).ready(function () {
     slide();
     monthly_slider();
     process_list();
+    scrollEvent();
 
 })
 
@@ -204,3 +205,19 @@ function process_list(){ //process 리스트 슬라이더
     })
 }
 
+function scrollEvent(){ //스크롤 이벤트
+
+    
+    $(window).scroll(function () { 
+        cPosition = $(window).scrollTop(); 
+        /* console.log(cPosition);  */
+        
+    });
+
+    console.log(cPosition)
+
+    if(cPosition >= 600){
+        $('.window').animate( { scrollTop : $('.process').offset().top }, 500 );
+    }
+    
+}

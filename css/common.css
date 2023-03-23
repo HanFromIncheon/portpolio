@@ -29,7 +29,7 @@
 .h-menu .menu-list:hover{
     background-color: rgba(0,0,0,0.7);
 }
-.menu-list a{
+.h-menu .menu-list a{
    width: 100%;
    height: 100%;
    display: block;
@@ -187,12 +187,14 @@
     background-color: #555555;
 }
 .h-wrapper .h-video .btn a span{
+   width: 100%;
+   height: 100%;
     font-size: 40px;
     font-weight: 800;
     color: #ffffff;
     position: absolute;
     top: 10%;
-    left: 13%;
+    left: 0;
 }
 
 /* header-end */
@@ -289,8 +291,9 @@
  .up-menu-list li a img{
    transition: 700ms;
  }
- .up-menu-list li a img:hover{
-   
+ .up-menu-list li a:hover img{
+   width: 100%;
+   height: 100%;
    transform: scale(1.2);
  }
  .up-menu-list .top{
@@ -461,7 +464,6 @@
 .process-content .descript .descript-list{
    height: 200px;
    width: 430px;
-
 }
 .process-content .descript .descript-list li{
    display: flex;
@@ -469,8 +471,7 @@
    position: absolute;
    top: 0;
    left: 0;
-   font-size: 20px;
-   line-height: 30px;
+   
    gap: 30px;
 }
 .process-content .descript .descript-list li .sub-title{
@@ -481,6 +482,8 @@
 .process-content .descript .descript-list li .text{
    display: flex;
    flex-direction: column;
+   font-size: 20px;
+   font-weight: bold;
 }
 .process-content .frame{
    width: 350px;
@@ -505,7 +508,7 @@
 .slide{
    width: 100%;
    max-width: 100%;
-   font-size:150px;
+   font-size: 120px;
    font-weight: 800;
    height: auto;
    background-color: #999999;
@@ -524,11 +527,10 @@
 .slide .inner .content .bg-text{
    position: absolute;
    font-size: 40px;
-   line-height: 42px;
    font-weight: 500;
    color: #ffffff;
-   top: -30px;
-
+   top: -55px;
+   cursor: default;
 }
 .slide .inner .content .text{
    color: #333333;
@@ -537,7 +539,7 @@
    white-space: nowrap;
    will-change: transform;
    animation: marquee 20s linear infinite;
-   top: -120px;
+   top: -100px;
 }
 
 /* slider */
@@ -553,7 +555,11 @@
 }
 .official .content-wrapper .menu-list{
    margin: auto 100px auto 0px;
-   
+}
+.official .content-wrapper .menu-list a{
+   width: 100%;
+   height: 100%;
+   display: block;
 }
 .official .content-wrapper .menu-list li{
    font-size: 70px;
@@ -692,7 +698,7 @@
 
 .f-container{
    width: 100%;
-   height: 350px;
+   height: 300px;
    background-color: #222222;
 }
 .f-container .inner {
@@ -703,7 +709,7 @@
 .f-container .inner .left{
    display: flex;
    flex-direction: column;
-   gap: 30px;
+   gap: 40px;
    width: 550px;
    margin-top: 60px;
 }
@@ -713,18 +719,18 @@
 }
 .f-container .inner .left .menu-list a{
    color: #dddddd;
-   font-size: 20px;
+   font-size: 16px;
 }
 .f-container .inner .left .information{
    display: flex;
    flex-wrap: wrap;
-   font-size: 15px;
+   font-size: 14px;
    line-height: 20px;
-   gap: 15px;
+   gap: 8px;
 }
 .f-container .inner .left .information span.address{
    width: 100%;
-   font-size: 25px;
+   font-size: 20px;
    margin-bottom: 20px;
    font-weight: 800;
 }
@@ -745,27 +751,28 @@
    top: -5px;
 }
 
-.f-container .inner .right{
+.f-container .inner .right1,
+.f-container .inner .right2{
    display: flex;
    margin-top: 60px;
    gap: 60px;
 }
-.f-container .inner .right ul{
+.f-container .inner ul{
    display: flex;
    flex-direction: column;
    gap: 15px;
 }
-.f-container .inner .right ul .L{
-   font-size: 30px;
+.f-container .inner ul .l-text{
+   font-size: 22px;
    font-weight: 800;
 }
-.f-container .inner .right ul .M{
+.f-container .inner ul .m-text{
    font-size: 20px;
    font-weight: 800;
 }
-.f-container .inner .right ul .S{
+.f-container .inner ul .s-text{
    font-size: 15px;
 }
-.f-container .inner .right ul .XS{
+.f-container .inner ul .xs-text{
    font-size: 12px;
 }
